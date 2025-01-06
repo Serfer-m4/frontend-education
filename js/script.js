@@ -29,8 +29,8 @@ const obj = {
 };
 
 console.log(typeof obj); // object
-console.log(obj); 
-console.log(obj.name, obj.age, obj.job );
+// console.log(obj); 
+// console.log(obj.name, obj.age, obj.job );
 
 // const obj2 = obj
 
