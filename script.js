@@ -49,7 +49,9 @@ console.log("3.2. Числа та рядки:")
 const line1 = 'Lorem ipsum dolor sit amet'
 const line2 = 'consectetur adipiscing elit'
 const line3 = 'sed do eiusmod tempor incididunt ut labore et'
-console.log(line2 + line3 + line1); 
+const linesArray = [line1, line2, line3]
+console.log(linesArray);
+
 
 // 3.3. Розкласти п'ятизначне число
 console.log("3.3. Розкласти п'ятизначне число:")
@@ -62,3 +64,28 @@ function splitNumber(index) {
 }
 const splindex = splitNumber(index);
 console.log(splindex); // 7 7 5 3 1
+
+// alert("WELCOME TO THE CLUB!");
+// confirm("Are you ready?");
+// const isFun = confirm("Are you ready?");
+
+// const userName = prompt("What's your name?");
+
+// if (userName) {
+//     alert('Nice to  see U, ${userName}!');
+// } else {
+//     alert("Nevermind)");
+// }
+
+// function turnComp() {
+//     return "Ready to work";
+// }
+// const comp = turnComp();
+// console.log(comp);
+
+let number1 = 0;
+
+// // 1
+number1--; // -1
+console.log(number1)
+
