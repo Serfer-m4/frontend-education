@@ -29,3 +29,11 @@ const obj = {
 };
 
 console.log(typeof obj); // object
+
+const arr = [1, 2, 3]; 
+console.log(typeof arr); // object
+
+function example() { 
+    console.log("Hello world!"); 
+} 
+console.log(typeof example); // function
