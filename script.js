@@ -89,3 +89,6 @@ let number1 = 0;
 number1--; // -1
 console.log(number1)
 
+for (let i = 0; i < 5) {
+
+}
