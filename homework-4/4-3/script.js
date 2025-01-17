@@ -43,4 +43,3 @@ if (message) {
   }
   alert(`Ваш вік: ${age} років.\n${cityShow}\n${sportMessage}`);
 }
-
