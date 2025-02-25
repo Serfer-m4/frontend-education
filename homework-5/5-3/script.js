@@ -1,42 +1,17 @@
-// 4.3. Портрет користувача
-console.log("4.3. Портрет користувача");
-const userName = prompt("Назвіться, будь ласка:");
-const birthYear = prompt("Введіть свій рік народження:");
-let d = new Date();
-let yearNow = d.getFullYear();
-let age = yearNow - birthYear;
-const cityLive = prompt("В якому місті Ви живете?");
-const favoriteSport = prompt("Який Ваш улюблений вид спорту?");
+// 5.3. Пошук потрібних чисел
+console.log("5.3. Пошук потрібних чисел");
 
-let message = "";
-if (!userName) {
-  message += "Шкода, що Ви не захотіли ввести своє імʼя.\n";
-}
-if (!birthYear) {
-  message += "Шкода, що Ви не захотіли ввести свій рік народження.\n";
-}
-if (!cityLive) {
-  message += "Шкода, що Ви не захотіли ввести своє місто проживання.\n";
-}
-if (!favoriteSport) {
-  message += "Шкода, що Ви не захотіли ввести свій улюблений вид спорту.";
-}
-if (message) {
-  alert(message);
-} else {
-  let cityMessage;
-  if (city === "Київ") {
-    cityMessage = "Ви живете у столиці України.";
-  } else if (city === "Вашингтон") {
-    cityMessage = "Ви живете у столиці США.";
-  } else if (city === "Лондон") {
-    cityMessage = "Ви живете у столиці Великобританії.";
-  } else {
-    cityMessage = `Ви живете у місті ${city}.`;
+const cifer = Number(prompt("Введіть число N:"));
+let result = "";
+if (!isNaN(cifer) && cifer > 0) {
+  for (let i = 1; i <= 100; i++) {
+    if (i * i <= cifer) {
+       result += i + " ";
+    } else {
+      break;
+    }
   }
-  
+  console.log(result.trim());
+} else {
+  console.log("Будь ласка, введіть коректне додатне число.");
 }
-
-
-
-alert(`Ваш вік: ${age}\n ${whereDoLive}`);

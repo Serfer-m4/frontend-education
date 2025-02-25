@@ -1,11 +1,9 @@
-console.log("4.2. Перевірка числа");
+console.log("5.2. Розрахунок обміну валюти");
 
-let number = prompt('Введіть тризначне число:');
-const digits = number.split("");
-
-const same = new Set(digits).size !== digits.length; // Перевірка дублікатів
-if (same) {
-  console.log('У числі є однакові цифри.');
+const usd = 26;
+const amount = Number(prompt('Введіть число:'));
+if (!isNaN(amount) && amount > 0) {
+  console.log(`${amount} USD = ${amount * usd} UAH`);
 } else {
-  console.log('Усі цифри в числі різні.');
+  console.log("Будь ласка, введіть коректне число.");
 }
