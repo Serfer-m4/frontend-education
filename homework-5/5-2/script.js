@@ -7,3 +7,8 @@ if (!isNaN(amount) && amount > 0) {
 } else {
   console.log("Будь ласка, введіть коректне число.");
 }
+
+const dollarsArray = Array.from({ length: 10 }, (_, i) => (i + 1) * 10);
+const result = dollarsArray.map(dollars => `${dollars} USD = ${dollars * usd} UAH`);
+
+console.log(result.join("\n"));

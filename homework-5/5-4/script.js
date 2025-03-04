@@ -15,5 +15,5 @@ if (isNaN(num) || !Number.isInteger(num)) {
       break;
     }
   }
-  alert(isPrime ? "Число просте" : "Число не є простим");
+  alert(isPrime ? "Число просте" : "Число не просте");
 }
